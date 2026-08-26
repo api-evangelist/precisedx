@@ -1,0 +1,19 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.precisedx.ai/
+limit_count: 0
+note: >-
+  No rate limits are documented because PreciseDx publishes no API. Full STEP 0b
+  contract discovery on 2026-08-26 found no REST/OpenAPI, GraphQL, MCP, gRPC, SOAP or
+  AsyncAPI surface on any PreciseDx host, and no api./docs./developer. subdomain
+  resolves in DNS at all. There is therefore no endpoint to which a limit, window,
+  burst, or RateLimit-* response header could apply. This file records a measured
+  absence; NO RateLimits pointer is wired into apis.yml.
+rate_limits: []
+evidence:
+- url: https://www.precisedx.ai/openapi.json
+  status: 404
+- url: https://portal.precisedx.ai/openapi.json
+  status: 404
+- url: https://api.precisedx.ai
+  status: '<no DNS record>'

@@ -1,0 +1,49 @@
+generated: '2026-08-26'
+method: probed
+source: live GET probes of /.well-known/* on every PreciseDx host in apis.yml
+hit_count: 0
+note: >-
+  Every /.well-known/ path returned a genuine HTTP 404 on both PreciseDx hosts, so
+  nothing was saved and NO WellKnown or SecurityTxt pointer is wired into apis.yml.
+  This file records a measured absence, not a served surface. Both hosts return real
+  404 status codes rather than soft-200 catch-alls: www.precisedx.ai (Webflow) answers
+  /.well-known/* with an 88-byte "Invalid .well-known request" body under a 404, and
+  portal.precisedx.ai (Next.js) answers with its 4,975-byte 404 page. Neither is an
+  SPA catch-all that would falsely register a hit.
+hosts:
+- host: https://www.precisedx.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://portal.precisedx.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404

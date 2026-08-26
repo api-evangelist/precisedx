@@ -1,0 +1,82 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.precisedx.ai/certifications
+note: >-
+  PreciseDx publishes a real, named regulatory compliance posture for its clinical
+  laboratory operations, but declares no API-level or interoperability standard
+  anywhere, because it publishes no API. The regulatory entries below are searched
+  from the company's own certifications and privacy pages with permit and license
+  numbers quoted verbatim. The interoperability entries are recorded as conforms:false
+  meaning "not evidenced on any public surface" — this is a measured absence, not a
+  finding that the company fails a standard it claims. Domain-standard conformance is
+  reward-only: nothing here is penalised for being absent.
+standards:
+- id: clia
+  name: CLIA (Clinical Laboratory Improvement Amendments, CMS)
+  conforms: true
+  evidence: >-
+    Certifications page lists CLIA certification for two laboratories — New York City
+    permit 33D2233023 and Miami permit 10D2289313 — and states the company is fully
+    operational for all 50 states.
+  source: https://www.precisedx.ai/certifications
+- id: cap-accreditation
+  name: College of American Pathologists laboratory accreditation
+  conforms: true
+  evidence: >-
+    Certifications page lists CAP accreditation number 9634148 for both the New York
+    City and Miami laboratories.
+  source: https://www.precisedx.ai/certifications
+- id: us-state-lab-licenses
+  name: US state clinical laboratory licensure
+  conforms: true
+  evidence: >-
+    Certifications page lists per-state licenses for both labs — California 90009379
+    and 90014188, Maryland 3850, Pennsylvania 40292 and 41169, Rhode Island LC001781
+    and LCO01780.
+  source: https://www.precisedx.ai/certifications
+- id: hipaa
+  name: HIPAA (Health Insurance Portability and Accountability Act)
+  conforms: true
+  evidence: >-
+    The company publishes a dedicated HIPAA Notice of Privacy Practices alongside its
+    general and consumer-health privacy policies, consistent with operating as a
+    HIPAA-covered clinical laboratory.
+  source: https://www.precisedx.ai/hippa-privacy-policy
+- id: hl7-fhir
+  name: HL7 FHIR
+  conforms: false
+  evidence: >-
+    Not evidenced. No FHIR endpoint, capability statement, resource profile or
+    implementation guide appears on any PreciseDx host; no /fhir or /metadata path
+    resolves and the site never mentions FHIR.
+- id: hl7-v2
+  name: HL7 v2 messaging
+  conforms: false
+  evidence: >-
+    Not evidenced. Ordering and result delivery run through an authenticated web
+    portal; no HL7 v2 interface, ORM/ORU message specification, or LIS/EHR interface
+    document is published publicly.
+- id: dicom
+  name: DICOM (including Whole Slide Imaging, Supplement 145)
+  conforms: false
+  evidence: >-
+    Not evidenced. PreciseDx is a digital pathology company operating on H&E whole
+    slide images, which is the natural home of DICOM WSI, but no DICOM conformance
+    statement or imaging interface is published on any public surface.
+- id: oauth2
+  name: OAuth 2.0
+  conforms: false
+  evidence: >-
+    Not evidenced. /.well-known/oauth-authorization-server and
+    /.well-known/oauth-protected-resource return 404 on both hosts; the clinician
+    portal presents a first-party email and password form.
+- id: oidc
+  name: OpenID Connect
+  conforms: false
+  evidence: >-
+    Not evidenced. /.well-known/openid-configuration returns 404 on both
+    www.precisedx.ai and portal.precisedx.ai.
+- id: rfc9457-problem-details
+  name: RFC 9457 Problem Details for HTTP APIs
+  conforms: false
+  evidence: Not applicable — no API surface exists to return problem documents.

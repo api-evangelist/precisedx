@@ -64,5 +64,10 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-PreciseDx is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+PreciseDx is a New York-based AI digital pathology and oncology diagnostics company, founded out of the digital pathology program at Mount Sinai Health System. Its OncoIntelligence platform applies a patented Morphology Feature Array to hematoxylin and eosin (H&E) stained tissue images, combining AI-derived morphology features with clinicopathologic factors to produce an OncoIntelligence Score. The flagship test, PreciseBreast, stratifies early-stage breast cancer patients into high- and low-risk cohorts for disease recurrence up to 8.8 years. PreciseDx operates CLIA-certified, CAP-accredited laboratories in New York City and Miami and is licensed in all 50 states.
+
+**PreciseDx publishes no public API.** Contract discovery on 2026-08-26 found no OpenAPI, GraphQL, MCP, gRPC, SOAP or AsyncAPI surface on any PreciseDx host, and no `api.`, `docs.` or `developer.` subdomain resolves in DNS. Clinicians order PreciseBreast through an authenticated web portal, not programmatically.
+
+- https://www.precisedx.ai/
+- https://portal.precisedx.ai/
+- https://github.com/PreciseDx

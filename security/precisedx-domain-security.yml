@@ -1,0 +1,30 @@
+generated: '2026-08-26'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.precisedx.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 15 18:28:56 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: portal.precisedx.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 13 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 63072000
+  hsts_include_subdomains: true
+  hsts_preload: true
+  note: >-
+    Authenticated clinician ordering portal (PDx Portal / Order Portal). Added by hand
+    from a live TLS/HTTP probe on 2026-08-26 because probe-domain-security.py reads
+    baseURL/servers[] hosts and this host is only referenced from the Login pointer.
+domains:
+- domain: precisedx.ai
+  dnssec: true
+  caa:
+  - cdn.webflow.com.
+  spf: true
+  dmarc: true
+  dmarc_policy: none

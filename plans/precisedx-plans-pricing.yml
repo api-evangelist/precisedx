@@ -1,0 +1,26 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.precisedx.ai/billing-program
+plan_count: 0
+note: >-
+  PreciseDx publishes no plans, tiers, or list pricing of any kind — not for an API
+  (it has none) and not for its diagnostic test. PreciseBreast is a CLIA laboratory
+  developed test ordered by a clinician through an authenticated portal and billed to
+  the patient's health plan, so the commercial surface is payor reimbursement plus a
+  patient billing program and a patient assistance program, not a published price
+  list. The company's own marketing states PreciseBreast costs roughly 30 percent of
+  gene expression testing, but no dollar figure, tier, quota, or overage is published
+  anywhere on the site. This file records a measured absence; NO Plans pointer is
+  wired into apis.yml, because a pointer would assert a published plan surface the
+  company does not serve.
+plans: []
+evidence:
+- url: https://www.precisedx.ai/billing-program
+  status: 200
+  finding: patient billing program, insurance/payor billing guidance, no price list
+- url: https://www.precisedx.ai/patient-assistance-program
+  status: 200
+  finding: financial assistance program for patients, no published pricing
+- url: https://www.precisedx.ai/payors
+  status: 200
+  finding: payor-facing reimbursement page, no published rates
