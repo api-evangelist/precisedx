@@ -14,6 +14,17 @@ description: 'PreciseDx is a New York-based AI digital pathology and oncology di
   is handled through an authenticated web portal; the company publishes no public
   developer program, API documentation, or machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/precisedx/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/67378b4f7c5e7a479024673e/6744ba2778d8a8afb2c924d1_PreciseDx-Webclip.svg
 x-type: company
 x-source: harvest:secondary-market
