@@ -52,7 +52,7 @@ tags:
 - Digital Pathology
 - Oncology
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Clinical Laboratory
 - Precision Medicine
 tags_raw:
@@ -66,6 +66,7 @@ tags_raw:
 - Machine Learning
 - Clinical Laboratory
 - Precision Medicine
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
