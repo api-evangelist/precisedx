@@ -64,10 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-PreciseDx is a New York-based AI digital pathology and oncology diagnostics company, founded out of the digital pathology program at Mount Sinai Health System. Its OncoIntelligence platform applies a patented Morphology Feature Array to hematoxylin and eosin (H&E) stained tissue images, combining AI-derived morphology features with clinicopathologic factors to produce an OncoIntelligence Score. The flagship test, PreciseBreast, stratifies early-stage breast cancer patients into high- and low-risk cohorts for disease recurrence up to 8.8 years. PreciseDx operates CLIA-certified, CAP-accredited laboratories in New York City and Miami and is licensed in all 50 states.
+PreciseDx is a New York-based AI digital pathology and oncology diagnostics company, founded out of the digital pathology program at Mount Sinai Health System. Its OncoIntelligence platform applies a patented Morphology Feature Array to hematoxylin and eosin (H&E) stained tissue images, combining AI-derived morphology features with clinicopathologic factors to produce an OncoIntelligence Score. The flagship test, PreciseBreast, stratifies early-stage breast cancer patients into high- and low-risk cohorts for disease recurrence up to 8.8 years, clinically validated across more than 1,600 cases, returning results in hours rather than the two to six weeks required for gene expression testing and at roughly 30 percent of the cost. PreciseDx operates CLIA-certified and CAP-accredited laboratories in New York City and Miami and is licensed in all 50 states. Test ordering for clinicians is handled through an authenticated web portal; the company publishes no public developer program, API documentation, or machine-readable API contract.
 
-**PreciseDx publishes no public API.** Contract discovery on 2026-08-26 found no OpenAPI, GraphQL, MCP, gRPC, SOAP or AsyncAPI surface on any PreciseDx host, and no `api.`, `docs.` or `developer.` subdomain resolves in DNS. Clinicians order PreciseBreast through an authenticated web portal, not programmatically.
+**Areas:** Company · Health · Healthcare · Diagnostics · Digital Pathology · Oncology · Artificial Intelligence · Machine Learning · Clinical Laboratory · Precision Medicine
 
-- https://www.precisedx.ai/
-- https://portal.precisedx.ai/
-- https://github.com/PreciseDx
+## PreciseDx on APIs.io
+
+Everything profiled for PreciseDx is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/precisedx/](https://apis.io/providers/precisedx/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Precisedx Domain Security](https://apis.io/security/precisedx/precisedx-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Precisedx Plans Pricing](https://apis.io/plans/precisedx/precisedx-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Precisedx Rate Limits](https://apis.io/rate-limits/precisedx/precisedx-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.precisedx.ai/)
+- [Sign up](https://www.precisedx.ai/portal-signup)
+- [Support](https://www.precisedx.ai/contact)
+- [Blog](https://www.precisedx.ai/publications)
+- [Compliance](https://www.precisedx.ai/certifications)
+- [Terms of service](https://www.precisedx.ai/terms-of-service)
+- [Privacy policy](https://www.precisedx.ai/privacy-policy)
+- [GitHub](https://github.com/PreciseDx)
+
+## API Evangelist rating
+
+**Kin Score 18.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 42.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.6** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/precisedx/](https://apis.io/providers/precisedx/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PreciseDx: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/precisedx/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
